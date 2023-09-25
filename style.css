@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 body {
   font: "Raleway", sans-serif;
   color: rgba(0, 0, 0, 0.5);
@@ -5,22 +12,58 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.5em;
   top: 15%;
-  background: linear-gradient(to right, red, yellow); /* Standard syntax */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#87ceeb),
+    to(#add8e6)
+  );
+  background: -o-linear-gradient(left, #87ceeb, #add8e6);
+  background: linear-gradient(to right, #87ceeb, #add8e6);
 }
 
 h1 {
-  font: 600 3.5em "Raleway", sans-serif;
+  font: 600 3rem "Helvetica", sans-serif;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.8em;
   width: 100%;
 }
 
 h3 {
-  font: 900 1em "Raleway", sans-serif;
+  font: 900 1.1em "Helvetica", sans-serif;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
   text-transform: none;
   letter-spacing: 0.01em;
+  margin-bottom: 20px;
+}
+
+.generator-button {
+  font: 900 1em "Helvetica", sans-serif;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#87ceeb),
+    to(#add8e6)
+  );
+  background: -o-linear-gradient(left, #87ceeb, #add8e6);
+  background: linear-gradient(to right, #87ceeb, #add8e6);
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 10px solid rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.6s all;
+  -o-transition: 0.6s all;
+  transition: 0.6s all;
+}
+
+.generator-button:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
