@@ -12,7 +12,7 @@ A web application that allows you to easily generate custom backgrounds using gr
 
 ## Demo
 
-You can try out the Background Generator app [here](https://example.com/background-generator).
+You can try out the [Background Generator app here](https://luriel-xyz.github.io/background-generator/).
 
 ## Installation
 
